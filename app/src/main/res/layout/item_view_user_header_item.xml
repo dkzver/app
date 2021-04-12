@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:id="@+id/appbar">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="horizontal" android:gravity="center_vertical"
+                      android:paddingTop="8dp"
+                      android:paddingLeft="16dp"
+                      android:paddingBottom="8dp">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:id="@+id/image_view_back" android:contentDescription="@string/todo"
+                       android:background="@drawable/baseline_arrow_back_black_18dp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:maxLength="16"
+                      android:layout_marginLeft="24dp" android:text="@string/todo" android:id="@+id/text_view_title"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:orientation="horizontal" android:id="@+id/view_menu"
+                      android:layout_alignParentRight="true"
+                      android:padding="16dp">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:background="@drawable/baseline_more_vert_black_18dp" android:id="@+id/image_view_menu"
+                       android:contentDescription="TODO"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                 android:paddingTop="16dp"
+                 android:paddingLeft="16dp"
+                 android:paddingRight="16dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal">
+                <RelativeLayout android:layout_width="72dp" android:layout_height="72dp" android:padding="4dp"
+                                android:background="@drawable/user_background" android:id="@+id/view_avatar">
+                    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                    android:background="@drawable/user_background2" android:padding="1dp">
+                        <ImageView android:layout_width="match_parent" android:layout_height="match_parent"
+                                   android:id="@+id/image_view_avatar"
+                        />
+                    </RelativeLayout>
+                </RelativeLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:orientation="horizontal" android:layout_marginLeft="8dp">
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:orientation="vertical" android:gravity="center_horizontal"
+                                  android:id="@+id/view_count_places">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:textStyle="bold" android:id="@+id/text_view_count_place" android:text="5 000"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:text="@string/count_place"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:id="@+id/text_view_description" android:layout_marginTop="8dp"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:orientation="vertical">
+                <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:id="@+id/text_view_interests" android:text="@string/label_interests"
+                                  android:textStyle="bold" android:layout_marginRight="4dp"
+                                  android:fontFamily="@font/nunito"/>
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                      android:id="@+id/view_interests" android:orientation="horizontal">
+                        </LinearLayout>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:id="@+id/text_view_not_interests" android:text="@string/not_interests"
+                                  android:gravity="center_horizontal"/>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:orientation="horizontal" android:layout_marginTop="8dp"
+                          android:id="@+id/view_buttons">
+                <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+                        style="@style/ButtonProfile"
+                        android:text="@string/add_to_friend" android:id="@+id/button_friend" android:layout_weight="1"
+                        android:visibility="visible"/>
+                <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+                        style="@style/ButtonProfile"
+                        android:text="@string/write_message" android:id="@+id/button_write_message"
+                        android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="200dp"
+                 android:id="@+id/view_map"
+    >
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent"
+                   android:id="@+id/image_view_snapshot"/>
+    </FrameLayout>
+</LinearLayout>

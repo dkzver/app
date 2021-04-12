@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/modal_background" android:id="@+id/view"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                 android:orientation="vertical">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:id="@+id/view_buttons_sign_in" android:visibility="visible"
+                      android:layout_gravity="center_horizontal|center_vertical">
+            <RelativeLayout android:layout_width="200dp" android:layout_height="wrap_content"
+                            android:id="@+id/view_button_sign_in_google"
+                            android:background="@color/colorButtonSign"
+                            android:gravity="center_horizontal|center_vertical">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:orientation="horizontal" android:layout_marginTop="4dp"
+                              android:layout_marginBottom="4dp"
+                >
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                               android:layout_margin="8dp"
+                               android:src="@drawable/google_logo"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="match_parent"
+                              android:layout_marginRight="8dp"
+                              android:text="@string/sign_in_google" android:gravity="center_vertical"
+                              android:textStyle="bold"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="200dp" android:layout_height="wrap_content"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:layout_marginTop="8dp"
+                            android:id="@+id/view_button_sign_in_vk"
+                            android:background="@color/colorButtonSign">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:orientation="horizontal" android:layout_marginTop="4dp"
+                              android:layout_marginBottom="4dp"
+                >
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                               android:layout_margin="8dp"
+                               android:src="@drawable/vk_login"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="match_parent"
+                              android:layout_marginRight="8dp"
+                              android:text="@string/sign_in_vk" android:gravity="center_vertical"
+                              android:textStyle="bold"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="200dp" android:layout_height="wrap_content"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:layout_marginTop="8dp"
+                            android:id="@+id/view_button_sign_in_fb"
+                            android:background="@color/colorButtonSign">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:orientation="horizontal" android:layout_marginTop="4dp"
+                              android:layout_marginBottom="4dp"
+                >
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                               android:layout_margin="8dp"
+                               android:src="@drawable/fb_logo"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="match_parent"
+                              android:layout_marginRight="8dp"
+                              android:text="@string/sign_in_fb" android:gravity="center_vertical"
+                              android:textStyle="bold"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:layout_marginTop="8dp"
+                      android:text="@string/or" android:gravity="center_horizontal"/>
+            <RelativeLayout android:layout_width="200dp" android:layout_height="wrap_content"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:layout_marginTop="8dp"
+                            android:id="@+id/view_button_continue"
+                            android:background="@color/colorButtonSign">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:orientation="horizontal" android:layout_marginTop="4dp"
+                              android:layout_marginBottom="4dp"
+                >
+                    <TextView android:layout_width="wrap_content" android:layout_height="match_parent"
+                              android:layout_marginRight="8dp"
+                              android:text="@string/button_continue" android:gravity="center_vertical"
+                              android:textStyle="bold"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <com.facebook.login.widget.LoginButton
+                android:visibility="gone"
+                android:id="@+id/sign_in_fb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"/>
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/layoutChat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorTransparency" android:paddingTop="4dp" android:paddingBottom="8dp" android:paddingRight="4dp">
+
+    <RelativeLayout
+            android:id="@+id/message_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@id/test_arrow"
+            android:background="@drawable/bg_msg_right"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="7dp"
+            tools:ignore="UselessParent">
+
+        <FrameLayout android:layout_width="100dp" android:layout_height="100dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/image_view">
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/image_view_preloader"/>
+            <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content"
+                         android:id="@+id/progress_bar" android:layout_gravity="center_horizontal|center_vertical"/>
+        </FrameLayout>
+
+        <ImageView
+                android:id="@+id/view_read"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="2dp"
+
+                android:layout_alignBottom="@+id/image_view"
+                android:layout_toEndOf="@+id/image_view"
+                android:src="@drawable/baseline_check_circle_outline_black_18dp"
+                android:layout_toRightOf="@+id/image_view"/>
+
+    </RelativeLayout>
+
+    <ImageView
+            android:id="@+id/test_arrow"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="-6dp"
+            android:layout_marginTop="1dp"
+            android:background="@null"
+            android:scaleX="1.5"
+            android:src="@drawable/v_bubble_corner_right" />
+</RelativeLayout>

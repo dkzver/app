@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" android:padding="16dp">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:orientation="vertical">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="horizontal" android:id="@+id/view_item">
+            <RelativeLayout
+                    android:layout_width="58dp"
+                    android:layout_height="58dp"
+                    android:layout_marginRight="8dp"
+                    android:id="@+id/view_image">
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:id="@+id/image_view_snapshot"
+                        android:scaleType="center"
+                        android:contentDescription="@string/todo" android:background="@color/colorOrange"/>
+            </RelativeLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:orientation="vertical">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:id="@+id/text_view_title"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:id="@+id/text_view_location"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:id="@+id/text_view_description"/>
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:gravity="right">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:contentDescription="@string/todo"
+                       android:id="@+id/button_toggle"
+                       android:foregroundGravity="right" android:layout_alignParentRight="true"
+                       android:background="@drawable/baseline_keyboard_arrow_down_black_18dp"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:orientation="vertical" android:id="@+id/view_more">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:orientation="horizontal">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="@string/label_date_begin" android:layout_marginRight="4dp"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:id="@+id/text_view_date_begin"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:orientation="horizontal">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="@string/label_date_end" android:layout_marginRight="4dp"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:id="@+id/text_view_date_end"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:orientation="horizontal">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="@string/label_time_visit" android:layout_marginRight="4dp"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:id="@+id/text_view_time_visit"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:orientation="horizontal">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="@string/label_limit_participant" android:layout_marginRight="4dp"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:id="@+id/text_view_count_participant"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:orientation="horizontal">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="@string/label_anonymous_visit" android:layout_marginRight="4dp"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:id="@+id/text_view_anonymous_visit"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:orientation="horizontal">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="@string/label_category" android:layout_marginRight="4dp"
+                              android:layout_marginEnd="4dp"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:id="@+id/text_view_category"/>
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView android:layout_width="match_parent"
+                                                           android:layout_height="wrap_content"
+                                                           android:id="@+id/recycler_view" android:layout_marginTop="8dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

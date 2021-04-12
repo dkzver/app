@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ucrop_color_crop_background">#000</color>
+    <color name="ucrop_color_toolbar_widget">#fff</color>
+    <color name="ucrop_color_default_crop_frame">#ffffff</color>
+    <color name="ucrop_color_default_crop_grid">#80ffffff</color>
+    <color name="ucrop_color_default_dimmed">#8c000000</color>
+    <color name="ucrop_color_default_logo">#4f212121</color>
+    <color name="ucrop_color_progress_wheel_line">#808080</color>
+    <color name="ucrop_color_statusbar">#CC5833</color>
+    <color name="ucrop_color_toolbar">#FF6E40</color>
+    <color name="ucrop_color_widget">#000</color>
+    <color name="ucrop_color_widget_active">#FF6E40</color>
+    <color name="ucrop_color_widget_background">#fff</color>
+    <color name="ucrop_color_widget_text">#000</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="colorPrimary">#1877F2</color>
+    <color name="colorPrimaryDark">#1161C7</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorWhite">#fff</color>
+    <color name="colorRed">#FF0000</color>
+    <color name="colorGreen">#CDDC39</color>
+    <color name="colorOrange">#FF9800</color>
+    <color name="colorGray">#A6A6A5</color>
+    <color name="colorHint">#80A6A6A5</color>
+    <color name="colorBlue">#03A9F4</color>
+    <color name="colorButtonSign">#F4F4F4</color>
+    <color name="colorProfile">#F4F4F4</color>
+    <color name="colorBlack">#000</color>
+    <color name="colorTransparency">#00000000</color>
+    <color name="serachBackgroundStroke">#1A03A9F4</color>
+</resources>

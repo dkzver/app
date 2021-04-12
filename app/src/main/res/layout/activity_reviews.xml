@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.activities.ReviewsActivity">
+    <androidx.recyclerview.widget.RecyclerView android:layout_width="match_parent" android:layout_height="match_parent" android:id="@+id/recycler_view_item" android:paddingBottom="120dp"/>
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="bottom">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="vertical" android:background="@color/colorWhite" android:padding="8dp">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:id="@+id/view_replay" android:layout_margin="8dp" android:visibility="gone">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:id="@+id/text_view_replay" android:text="@string/replay"/>
+            </RelativeLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:orientation="horizontal">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                           android:background="@drawable/baseline_settings_voice_black_18dp"
+                           android:contentDescription="@string/todo" android:id="@+id/image_view_voice"
+                           android:layout_margin="4dp"/>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:hint="@string/hint_comment" android:id="@+id/edit_text"
+                              android:layout_marginRight="52dp"/>
+
+                    <ImageButton
+                            android:id="@+id/button_send"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:text="Button" android:background="@drawable/baseline_messages"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginEnd="4dp"
+                            android:layout_marginLeft="4dp" android:layout_marginTop="4dp"
+                            android:layout_marginRight="4dp" android:layout_marginBottom="4dp"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+<!--    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingTop="8dp" android:paddingLeft="16dp">-->
+<!--        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"-->
+<!--                      android:orientation="horizontal" android:gravity="center_vertical">-->
+<!--            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"-->
+<!--                       android:id="@+id/image_view_back" android:contentDescription="@string/todo"-->
+<!--                       app:srcCompat="@drawable/baseline_arrow_back_black_18dp"/>-->
+<!--            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"-->
+<!--                      android:layout_marginLeft="24dp"-->
+<!--                      android:text="@string/settings"/>-->
+<!--        </LinearLayout>-->
+<!--    </RelativeLayout>-->
+
+</FrameLayout>

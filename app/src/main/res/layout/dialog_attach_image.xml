@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:padding="16dp">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="16dp"
+                  android:id="@+id/view_button_create_photo">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                   app:srcCompat="@drawable/baseline_camera_alt_black_18dp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:text="@string/create_photo" android:layout_marginLeft="16dp"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:orientation="horizontal" android:gravity="center_vertical"
+                  android:id="@+id/view_button_select_in_gallery" android:layout_marginBottom="16dp">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                   app:srcCompat="@drawable/baseline_photo_black_18dp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:text="@string/select_in_gallery" android:layout_marginLeft="16dp"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:orientation="horizontal" android:gravity="center_vertical"
+                  android:id="@+id/view_button_select_in_album">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                   app:srcCompat="@drawable/baseline_photo_album_black_18dp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:text="@string/select_in_album" android:layout_marginLeft="16dp"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,89 @@
+<resources>
+    <style name="ucrop_ImageViewWidgetIcon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:duplicateParentState">true</item>
+    </style>
+    <style name="ucrop_TextViewCropAspectRatio">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/ucrop_height_crop_aspect_ratio_text</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:duplicateParentState">true</item>
+        <item name="android:textColor">@color/ucrop_scale_text_view_selector</item>
+    </style>
+    <style name="ucrop_TextViewWidgetText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">@dimen/ucrop_margit_top_widget_text</item>
+        <item name="android:textColor">@color/ucrop_color_widget_text</item>
+        <item name="android:textSize">@dimen/ucrop_text_size_widget_text</item>
+    </style>
+    <style name="ucrop_WrapperIconState">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <style name="ucrop_WrapperRotateButton">
+        <item name="android:layout_width">@dimen/ucrop_size_wrapper_rotate_button</item>
+        <item name="android:layout_height">@dimen/ucrop_size_wrapper_rotate_button</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+    <style name="FullscreenTheme" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+    <style name="ProgressBar" parent="@android:style/Widget.ProgressBar">
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:background">@color/colorTransparency</item>
+        <item name="android:indeterminateDrawable">@drawable/circular_progress_dialog</item>
+    </style>
+    <style name="PopupMenuItem">
+        <item name="android:textColor">@color/colorOrange</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+    <style name="ButtonProfile" parent="Widget.MaterialComponents.Button.OutlinedButton.Icon">
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+</resources>

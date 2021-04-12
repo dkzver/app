@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" android:paddingBottom="8dp">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                 android:paddingLeft="16dp">
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal" android:id="@+id/view_user">
+            <RelativeLayout android:layout_width="72dp" android:layout_height="72dp" android:padding="4dp"
+                            android:background="@drawable/user_background" android:id="@+id/view_avatar">
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:background="@drawable/user_background2" android:padding="1dp">
+                    <ImageView android:layout_width="match_parent" android:layout_height="match_parent"
+                               android:id="@+id/image_view_avatar"
+                    />
+                </RelativeLayout>
+            </RelativeLayout>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:orientation="vertical" android:layout_marginLeft="8dp">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:id="@+id/text_view_title"
+                          android:singleLine="true" android:textStyle="bold"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:id="@+id/text_view_name"
+                          android:singleLine="true"/>
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:layout_gravity="right">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:contentDescription="@string/todo" android:id="@+id/image_view_menu"
+                       app:srcCompat="@drawable/baseline_more_vert_black_18dp" android:padding="16dp"/>
+        </RelativeLayout>
+    </FrameLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/view_icon"
+                    android:paddingTop="8dp">
+        <androidx.viewpager.widget.ViewPager android:layout_width="match_parent" android:layout_height="300dp"
+                                             android:id="@+id/view_pager" android:minHeight="300dp"/>
+    </RelativeLayout>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:id="@+id/text_view_description" android:hint="@string/hint_description" android:paddingLeft="16dp"
+              android:paddingRight="16dp"/>
+
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/view_buttons"
+                 android:paddingTop="8dp" android:paddingLeft="16dp" android:paddingRight="16dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="vertical">
+            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:orientation="horizontal" android:id="@+id/view_user_vote"
+                              android:gravity="center_vertical">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                               android:contentDescription="@string/todo" android:id="@+id/image_view_like"
+                               android:background="@drawable/baseline_favorite_border_black_18dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="1526" android:id="@+id/text_view_rating" android:layout_marginLeft="8dp"
+                              android:textStyle="bold" android:fontFamily="@font/nunito_bold"/>
+                </LinearLayout>
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:layout_gravity="right" android:id="@+id/view_mark">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                               android:contentDescription="@string/todo" android:id="@+id/image_view_mark"
+                               android:background="@drawable/baseline_bookmark_black_18dp"/>
+                </RelativeLayout>
+            </FrameLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:layout_marginTop="8dp" android:orientation="horizontal"
+                          android:id="@+id/view_user_visit">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:orientation="horizontal" android:id="@+id/view_visit">
+                    <ImageView android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:contentDescription="@string/todo"
+                               app:srcCompat="@drawable/baseline_face_black_18dp"/>
+                    <CheckBox android:id="@+id/checkbox_user_visit" android:layout_width="wrap_content"
+                              android:layout_height="wrap_content" android:text="@string/go_visit"
+                              android:clickable="false"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:orientation="horizontal" android:layout_marginLeft="16dp"
+                              android:id="@+id/view_anonymous">
+                    <ImageView android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:contentDescription="@string/todo"
+                               app:srcCompat="@drawable/baseline_account_circle_black_18dp"/>
+                    <CheckBox android:id="@+id/checkbox_anonymous_visit" android:layout_width="wrap_content"
+                              android:layout_height="wrap_content" android:text="@string/go_anonymous_visit"
+                              android:clickable="false"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:orientation="vertical" android:id="@+id/view_visiters">
+        <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:scrollbarAlwaysDrawHorizontalTrack="false"
+                              android:scrollbarAlwaysDrawVerticalTrack="false">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:id="@+id/view_content_visiters"/>
+        </HorizontalScrollView>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:layout_marginBottom="16dp"/>
+</LinearLayout>

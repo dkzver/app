@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" android:orientation="horizontal"
+>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="8dp"
+                    android:id="@+id/view_places" android:layout_weight="1" android:gravity="center_horizontal">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                   app:srcCompat="@drawable/baseline_map_black_18dp" android:contentDescription="@string/todo"
+                   android:id="@+id/image_view_places"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="8dp"
+                    android:id="@+id/view_users" android:layout_weight="1" android:gravity="center_horizontal">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                   app:srcCompat="@drawable/baseline_supervised_user_circle_black_18dp"
+                   android:contentDescription="@string/todo" android:id="@+id/image_view_users"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="8dp"
+                    android:id="@+id/view_messages" android:layout_weight="1" android:gravity="center_horizontal">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                   app:srcCompat="@drawable/baseline_messages" android:contentDescription="@string/todo"
+                   android:id="@+id/image_view_messages"/>
+    </RelativeLayout>
+<!--    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="8dp"-->
+<!--                    android:id="@+id/view_add" android:layout_weight="1" android:gravity="center_horizontal">-->
+<!--        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"-->
+<!--                   app:srcCompat="@drawable/baseline_add_black_18dp" android:contentDescription="@string/todo"-->
+<!--                   android:id="@+id/image_view_add"/>-->
+<!--    </RelativeLayout>-->
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="8dp"
+                    android:id="@+id/view_profile" android:layout_weight="1" android:gravity="center_horizontal">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                   app:srcCompat="@drawable/baseline_account_circle_black_18dp"
+                   android:contentDescription="@string/todo" android:id="@+id/image_view_profile"/>
+    </RelativeLayout>
+</LinearLayout>

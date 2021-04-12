@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "544889383797",
+    "project_id": "locationapp-310406",
+    "storage_bucket": "locationapp-310406.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:544889383797:android:e09102aa28ba824add413c",
+        "android_client_info": {
+          "package_name": "com.wearetogether.v2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "544889383797-mcs02t5s1qk1cli4r4mim73vos5o631i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wearetogether.v2",
+            "certificate_hash": "f980eaedeb060c07b62fa1b0bf0e273cf264246e"
+          }
+        },
+        {
+          "client_id": "544889383797-quq864cbpqmr6tvip5193aekv44hn8ug.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBk3bzQ20xZrAnxlB8WJzdHpZhWIM125lk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "544889383797-quq864cbpqmr6tvip5193aekv44hn8ug.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

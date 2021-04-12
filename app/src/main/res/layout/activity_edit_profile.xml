@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.activities.EditProfileActivity">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:paddingTop="48dp"
+                android:paddingLeft="16dp" android:paddingRight="16dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="vertical">
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <EditText android:layout_width="match_parent" android:layout_height="@dimen/form_settings_height"
+                          android:hint="@string/hint_login" android:id="@+id/edit_text_login"
+                          android:autofillHints="" android:inputType="text" android:textColorHint="@color/colorGray"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="@dimen/form_settings_height"
+                          android:visibility="gone">
+                <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:hint="@string/hint_first_name" android:id="@+id/edit_text_first_name"
+                          android:autofillHints="" android:inputType="text" android:textColorHint="@color/colorGray"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="@dimen/form_settings_height"
+                          android:visibility="gone">
+                <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:hint="@string/hint_last_name" android:id="@+id/edit_text_last_name"
+                          android:autofillHints="" android:inputType="text" android:textColorHint="@color/colorGray"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="@dimen/form_settings_height"
+                          android:gravity="center_vertical" android:id="@+id/view_sex">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="@string/label_sex"
+                          app:autoSizeTextType="none" android:textSize="18sp" android:id="@+id/text_view_sex"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="@dimen/form_settings_height"
+                          android:gravity="center_vertical" android:id="@+id/view_status">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="@string/label_status"
+                          app:autoSizeTextType="none" android:textSize="18sp" android:id="@+id/text_view_status"/>
+            </LinearLayout>
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                                                                   android:orientation="horizontal" android:id="@+id/view_custom_status">
+                <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:hint="@string/hint_custom_status" android:id="@+id/edit_text_custom_status"
+                          android:autofillHints="" android:inputType="text" android:textColorHint="@color/colorGray"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="@dimen/form_settings_height"
+                          android:gravity="center_vertical" android:id="@+id/view_date_birth">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="@string/label_date_birth"
+                          app:autoSizeTextType="none" android:textSize="18sp" android:id="@+id/text_view_date_birth"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingTop="8dp" android:paddingLeft="16dp">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:orientation="horizontal" android:gravity="center_vertical">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:id="@+id/image_view_back" android:contentDescription="@string/todo"
+                       app:srcCompat="@drawable/baseline_arrow_back_black_18dp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:layout_marginLeft="24dp"
+                      android:text="@string/edit_profile"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

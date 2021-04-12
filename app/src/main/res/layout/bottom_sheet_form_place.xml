@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/bottom_sheet_form_place"
+            android:background="@color/colorWhite"
+            app:behavior_hideable="true"
+            app:behavior_peekHeight="340dp"
+            app:layout_behavior="@string/bottom_sheet_behavior">
+    <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical">
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal" android:background="#fff"
+                      android:gravity="center_vertical">
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:gravity="center_vertical"
+                          android:id="@+id/view_gallery_back"
+                          android:paddingLeft="16dp"
+                          android:paddingBottom="8dp"
+                          android:paddingTop="8dp">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                           android:contentDescription="@string/todo"
+                           android:background="@drawable/baseline_arrow_back_black_18dp"
+                           android:id="@+id/image_view_gallery_back"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:layout_marginLeft="24dp"
+                          android:maxLength="16"
+                          android:text="@string/gallery"
+                          android:visibility="visible"/>
+            </LinearLayout>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/recycler_view_item"/>
+
+    </LinearLayout>
+</ScrollView>

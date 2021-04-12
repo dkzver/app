@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="type_find_array">
+        <item>По дистанции</item>
+        <item>По видимой области</item>
+    </string-array>
+    <string-array name="sex_array">
+        <item>Не указанно</item>
+        <item>Мужской</item>
+        <item>Женский</item>
+    </string-array>
+    <string-array name="status_array">
+        <item>Пользовательский</item>
+        <item>2</item>
+        <item>3</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="check_place_array">
+        <item>Не отмечать</item>
+        <item>По умолчанию</item>
+    </string-array>
+    <string-array name="category_array">
+        <item>...</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+</resources>

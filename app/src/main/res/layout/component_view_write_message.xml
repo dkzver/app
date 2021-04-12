@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+             android:layout_height="wrap_content" android:id="@+id/view_container"
+>
+
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                 android:layout_gravity="center_vertical">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="42dp"
+                      android:orientation="horizontal"
+                      android:background="@drawable/write_editor_background" android:paddingLeft="8dp"
+                      android:layout_gravity="center_vertical" android:visibility="visible"
+                      android:id="@+id/view_record"
+                      android:gravity="center_vertical" android:layout_marginRight="24dp">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       app:tint="@color/colorRed"
+                       app:srcCompat="@drawable/baseline_keyboard_voice_black_18dp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="0:00" android:id="@+id/text_view_time" android:layout_marginLeft="8dp"
+                      android:textSize="18sp"/>
+        </LinearLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="42dp"
+                     android:visibility="visible"
+                     android:gravity="center_vertical" android:layout_gravity="center_vertical"
+                     android:id="@+id/view_text" android:background="@drawable/write_editor_background"
+                     android:layout_marginRight="72dp">
+            <EditText android:layout_width="match_parent" android:layout_height="match_parent"
+                      android:hint="@string/hint_input_text" android:id="@+id/edit_text"
+                      android:layout_gravity="center_vertical" android:background="@color/colorTransparency"
+                      android:paddingLeft="8dp"/>
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:layout_alignParentRight="true"
+                          android:layout_centerVertical="true"
+                          android:layout_marginStart="4dp"
+                          android:layout_marginEnd="4dp"
+                          android:layout_marginLeft="4dp" android:layout_marginTop="4dp"
+                          android:layout_marginRight="4dp" android:layout_marginBottom="4dp"
+                          android:gravity="right" android:layout_gravity="right">
+
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                             android:padding="8dp" android:id="@+id/view_attach">
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/todo"
+                            android:background="@drawable/baseline_attach_file_black_18dp_mini"/>
+                </FrameLayout>
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                             android:padding="8dp" android:id="@+id/view_photo">
+                    <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:contentDescription="@string/todo"
+                            android:background="@drawable/baseline_photo_camera_black_18dp_mini"/>
+                </FrameLayout>
+
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="match_parent"
+                 android:layout_gravity="right">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/view_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_keyboard_voice_black_18dp_mini"
+                android:contentDescription="@string/todo"
+                app:backgroundTint="@color/colorWhite" android:layout_marginBottom="16dp"
+                android:layout_marginTop="8dp" android:layout_marginLeft="8dp" android:layout_marginRight="8dp"
+                app:elevation="0dp" android:background="@color/colorWhite" app:backgroundTintMode="add"
+        />
+    </FrameLayout>
+</FrameLayout>

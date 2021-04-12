@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.activities.MainActivity" android:background="@color/colorWhite">
+
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".ui.activities.FormPlaceActivity">
+
+        <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:paddingTop="48dp"
+                    android:paddingBottom="8dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                          android:paddingLeft="16dp" android:paddingRight="16dp"
+                          android:orientation="vertical">
+                <com.wearetogether.v2.ui.components.EditVoiceTextComponent android:layout_width="match_parent"
+                                                                                 android:layout_height="wrap_content"
+                                                                                 android:id="@+id/edit_voice_text_title"/>
+                <RelativeLayout android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/view_description">
+                    <com.wearetogether.v2.ui.components.EditVoiceTextComponent android:layout_width="match_parent"
+                                                                                     android:layout_height="wrap_content"
+                                                                                     android:id="@+id/edit_voice_text_description"/>
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
+                              android:layout_height="wrap_content" android:id="@+id/view_eanble_map">
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="200dp">
+                        <fragment android:layout_width="match_parent"
+                                  android:layout_height="match_parent"
+                                  android:id="@+id/map"
+                                  tools:context=".ui.activities.MainActivity"
+                                  android:name="com.google.android.gms.maps.SupportMapFragment"/>
+                        <ImageView android:layout_width="match_parent" android:layout_height="match_parent"
+                                   android:id="@+id/image_view_map" android:background="@color/colorHint"/>
+                    </RelativeLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:gravity="right">
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                      android:orientation="horizontal"
+                                      android:gravity="center_vertical">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                      android:text="@string/show_map"/>
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                       android:contentDescription="@string/todo"
+                                       android:layout_marginLeft="8dp"
+                                       android:background="@drawable/baseline_map_black_18dp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:gravity="right">
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:orientation="horizontal" android:id="@+id/view_gallery"
+                                  android:gravity="center_vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:text="@string/view_gallery"/>
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                   android:contentDescription="@string/todo"
+                                   android:layout_marginLeft="8dp"
+                                   android:background="@drawable/baseline_photo_black_18dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:gravity="right">
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:orientation="horizontal" android:id="@+id/view_more"
+                                  android:gravity="center_vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:text="@string/more_params"
+                                  android:id="@+id/text_view_more_params"/>
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                   android:contentDescription="@string/todo"
+                                   android:layout_marginLeft="8dp"
+                                   android:background="@drawable/baseline_keyboard_arrow_down_black_18dp"
+                                   android:id="@+id/image_view_more_params"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:orientation="vertical" android:id="@+id/view_more_content">
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="@dimen/form_settings_height"
+                                  android:gravity="center_vertical">
+                        <CheckBox android:layout_width="match_parent" android:layout_height="wrap_content"
+                                  android:textColor="@color/colorGray"
+                                  android:id="@+id/checkbox_anonymous_visit" android:text="@string/anonymous_visit"
+                        />
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="@dimen/form_settings_height"
+                                  android:gravity="center_vertical" android:id="@+id/view_date_begin">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:text="@string/label_date_begin"
+                                  app:autoSizeTextType="none" android:textSize="18sp"
+                                  android:id="@+id/text_view_date_begin"/>
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                   android:id="@+id/image_view_remove_date_begin"
+                                   app:srcCompat="@drawable/baseline_delete_black_18dp"/>
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="@dimen/form_settings_height"
+                                  android:gravity="center_vertical" android:id="@+id/view_date_end">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:text="@string/label_date_end"
+                                  app:autoSizeTextType="none" android:textSize="18sp"
+                                  android:id="@+id/text_view_date_end"/>
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                   android:id="@+id/image_view_remove_date_end"
+                                   app:srcCompat="@drawable/baseline_delete_black_18dp"/>
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="@dimen/form_settings_height"
+                                  android:gravity="center_vertical" android:id="@+id/view_time_visit">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:text="@string/label_time_visit"
+                                  app:autoSizeTextType="none" android:textSize="18sp"
+                                  android:id="@+id/text_view_time_visit"/>
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                   android:id="@+id/image_view_remove_time_visit"
+                                   app:srcCompat="@drawable/baseline_delete_black_18dp"/>
+                    </LinearLayout>
+                    <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent"
+                                                                           android:layout_height="wrap_content">
+                        <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+                                  android:inputType="number"
+                                  android:hint="@string/hint_count_participant"
+                                  android:id="@+id/edit_text_count_participant"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="@dimen/form_settings_height"
+                                  android:gravity="center_vertical" android:id="@+id/view_category">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:text="@string/label_category"
+                                  app:autoSizeTextType="none" android:textSize="18sp"
+                                  android:id="@+id/text_view_category"/>
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="@dimen/form_settings_height"
+                                  android:gravity="center_vertical">
+                        <CheckBox android:layout_width="match_parent" android:layout_height="wrap_content"
+                                  android:textColor="@color/colorGray"
+                                  android:id="@+id/checkbox_disable_comments" android:text="@string/disable_comments"
+                        />
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="@dimen/form_settings_height"
+                                  android:gravity="center_vertical">
+                        <CheckBox android:layout_width="match_parent" android:layout_height="wrap_content"
+                                  android:textColor="@color/colorGray"
+                                  android:id="@+id/checkbox_only_for_friends" android:text="@string/only_for_friends"
+                        />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:id="@+id/view_map"
+                     android:visibility="gone">
+
+            <fragment android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:id="@+id/mapFull"
+                      tools:context=".ui.activities.MainActivity"
+                      android:name="com.google.android.gms.maps.SupportMapFragment"/>
+        </FrameLayout>
+        <com.wearetogether.v2.ui.HackyViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:background="@color/colorBlack"
+                android:visibility="gone"/>
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content"
+                     android:id="@+id/progress_bar" android:layout_gravity="center_horizontal|center_vertical"/>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal" android:background="#fff" android:id="@+id/appbar"
+                      android:gravity="center_vertical">
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:gravity="center_vertical"
+                          android:id="@+id/view_back"
+                          android:paddingLeft="16dp"
+                          android:paddingBottom="8dp"
+                          android:paddingTop="8dp">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                           android:contentDescription="@string/todo"
+                           android:background="@drawable/baseline_arrow_back_black_18dp"
+                           android:id="@+id/image_view_back"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:layout_marginLeft="24dp"
+                          android:maxLength="16"
+                          android:text="@string/add_place" android:id="@+id/text_view_title"
+                          android:visibility="visible"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:paddingRight="16dp"
+                          android:paddingBottom="8dp"
+                          android:paddingTop="8dp" android:gravity="right|center_vertical">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:id="@+id/view_save"
+                              android:orientation="horizontal" android:gravity="center_vertical"
+                              android:visibility="visible">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                               android:contentDescription="@string/todo"
+                               app:srcCompat="@drawable/baseline_save_black_18dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:layout_marginLeft="8dp"
+                              android:text="@string/save"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:orientation="horizontal" android:layout_marginLeft="8dp"
+                              android:id="@+id/view_remove" android:visibility="gone">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                               android:background="@drawable/baseline_delete_black_18dp"/>
+                </LinearLayout>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:id="@+id/view_find_location" android:visibility="gone">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                               android:background="@drawable/baseline_settings_voice_white_18dp"
+                               android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_width="wrap_content"
+                                                                           android:layout_height="wrap_content"
+                                                                           android:layout_margin="16dp"
+                                                                           android:layout_gravity="bottom|end"
+                                                                           android:id="@+id/fab_capture"
+                                                                           android:src="@drawable/baseline_add_black_18dp"/>
+
+    <include layout="@layout/bottom_sheet_form_place" android:visibility="visible"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent" android:orientation="vertical" android:padding="16dp">
+    <CheckBox android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/show_current_date" android:text="@string/show_current_date"/>
+    <CheckBox android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/show_old_date" android:text="@string/show_old_date"/>
+    <CheckBox android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/show_future_date" android:text="@string/show_future_date"/>
+    <CheckBox android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/show_all_date" android:text="@string/show_all_date"/>
+    <CheckBox android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/online_mode" android:text="@string/show_online"/>
+    <CheckBox android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/offline_mode" android:text="@string/show_offline"/>
+    <CheckBox android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/all_mode" android:text="@string/show_all"/>
+</LinearLayout>

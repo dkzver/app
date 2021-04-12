@@ -1,0 +1,36 @@
+<resources>
+    <dimen name="ucrop_default_crop_frame_stoke_width">1dp</dimen>
+    <dimen name="ucrop_default_crop_grid_stoke_width">1dp</dimen>
+    <dimen name="ucrop_default_crop_logo_size">200dp</dimen>
+    <dimen name="ucrop_default_crop_rect_corner_touch_area_line_length">10dp</dimen>
+    <dimen name="ucrop_default_crop_rect_corner_touch_threshold">30dp</dimen>
+    <dimen name="ucrop_default_crop_rect_min_size">100dp</dimen>
+    <dimen name="ucrop_height_crop_aspect_ratio_text">40dp</dimen>
+    <dimen name="ucrop_height_divider_shadow">3dp</dimen>
+    <dimen name="ucrop_height_horizontal_wheel_progress_line">20dp</dimen>
+    <dimen name="ucrop_height_wrapper_controls">64dp</dimen>
+    <dimen name="ucrop_height_wrapper_states">72dp</dimen>
+    <dimen name="ucrop_margin_horizontal_wheel_progress_line">10dp</dimen>
+    <dimen name="ucrop_margit_top_widget_text">10sp</dimen>
+    <dimen name="ucrop_padding_crop_frame">16dp</dimen>
+    <dimen name="ucrop_size_dot_scale_text_view">8dp</dimen>
+    <dimen name="ucrop_size_wrapper_rotate_button">50dp</dimen>
+    <dimen name="ucrop_text_size_widget_text">13sp</dimen>
+    <dimen name="ucrop_width_horizontal_wheel_progress_line">2dp</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+    <dimen name="md_bottom_sheet_separator_top_margin">7dp</dimen>
+    <dimen name="app_bar_add_place_height">400dp</dimen>
+    <dimen name="charging_locations_list_peek_height">216dp</dimen>
+    <dimen name="appbar_padding">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+    <dimen name="badge_text_size">14sp</dimen>
+    <dimen name="form_settings_height">46dp</dimen>
+</resources>

@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference"/>
+        <attr name="metaButtonBarButtonStyle" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="StarView">
+        <attr name="circleColor" format="color"/>
+        <attr name="circleLabel" format="string"></attr>
+        <attr name="labelColor" format="color"></attr>
+    </declare-styleable>
+    <declare-styleable name="ucrop_AspectRatioTextView">
+        <attr format="string" name="ucrop_artv_ratio_title"/>
+        <attr format="float" name="ucrop_artv_ratio_x"/>
+        <attr format="float" name="ucrop_artv_ratio_y"/>
+    </declare-styleable>
+    <declare-styleable name="ucrop_UCropView">
+        <attr format="float" name="ucrop_aspect_ratio_x"/>
+        <attr format="float" name="ucrop_aspect_ratio_y"/>
+        <attr format="boolean" name="ucrop_show_oval_crop_frame"/>
+        <attr format="boolean" name="ucrop_circle_dimmed_layer"/>
+        <attr format="color" name="ucrop_dimmed_color"/>
+        <attr format="dimension" name="ucrop_grid_stroke_size"/>
+        <attr format="color" name="ucrop_grid_color"/>
+        <attr format="integer" name="ucrop_grid_row_count"/>
+        <attr format="integer" name="ucrop_grid_column_count"/>
+        <attr format="boolean" name="ucrop_show_grid"/>
+        <attr format="dimension" name="ucrop_frame_stroke_size"/>
+        <attr format="color" name="ucrop_frame_color"/>
+        <attr format="boolean" name="ucrop_show_frame"/>
+    </declare-styleable>
+
+</resources>
