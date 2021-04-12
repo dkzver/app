@@ -59,6 +59,7 @@ public class LoginViewComponent extends RelativeLayout implements VKAuthCallback
         initComponent();
     }
 
+
     public LoginViewComponent(Context context, AttributeSet attrs) {
         super(context, attrs);
         initComponent();
